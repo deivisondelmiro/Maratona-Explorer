@@ -3,72 +3,58 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: gray;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.952);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
 }
 
-.container {
-    background-color: rgb(91, 91, 91);
-    width: 450px;
-    height: 500px;
-    margin: auto;
-}
-
-img, input, button {
-    display: block;
-    margin: auto;
+#container {
+    margin-top: 100px;
+    width: 80%;
+    max-width: 400px;
+    margin-inline: auto;
 }
 
 img {
-    width: 125px;
-    height: 150px;
-    padding: 50px 0 25px 0;
-}
-
-h1, p {
-    text-align: center;
-    color: white;
+    width: 25%;
 }
 
 h1 {
-    font-size: 2.2rem;
-    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    opacity: 0.9;
 }
 
 p {
-    padding: 0 15px 8px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 4px;
 }
 
 input {
-    width: 420px;
-    height: 45px;
-    border: 1px solid white;
-    border-radius: 3.5px;
-    margin-bottom: 5px;
-}
-
-::placeholder {
-    font-size: 1rem;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
 button {
-    background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgba(255, 0, 0, 0.779));
-    width: 425px;
-    height: 50px;
+    background-color: rgba(255, 0, 0, 0.728);
     color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 1px solid rgba(255, 0, 0, 0.316);
-    border-radius: 3.5px;
+    transition: filter .2s;
 }
 
 button:hover {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0));
-    color:rgb(255, 255, 255);
-    width: 425px;
-    height: 50px;
+    filter: brightness(1.2);
+    cursor: pointer;
 }
