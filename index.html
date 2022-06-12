@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maratona Explorer - Bola de Cristal</title>
+    <title>Pergunte!</title>
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="./index.js" defer></script>
 </head>
 <body>
     <div id="container">
-        <img src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg" alt="Bola de Cristal sobe uma base circular, e luzes ilustrando estrelas ao redor da bola de cristal.">
-        <h1>Vou revelar seu destino!</h1>
-        <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-        <input id="inputPergunta" type="text" placeholder="Digite sua pergunta"/>
-        <button id="buttonPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
-        <h3 id="resposta"></h3>
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/20/07/cartoon-1295516_960_720.png" alt="">
+            <h1>Saiba a avaliação sincera de um filme ou série!</h1>
+            <p>Clique em ver análise para saber a qualidade do filme ou série.</p>
+            <input id="inputAnalise" type="text" placeholder="Digite o nome do filme ou série aqui">
+            <button id="buttonAnalisar" onclick="fazerAnalise()">Ver análise</button>
+            <h3 id="analiseFinal"></h3>
+        </div>
     </div>
 </body>
 </html>

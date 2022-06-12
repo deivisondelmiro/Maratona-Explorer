@@ -6,27 +6,33 @@
 }
 
 body {
-    background-color: black;
+    background-image: url("https://www.publicdomainpictures.net/pictures/390000/nahled/image-16146261628WB.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
     text-align: center;
     font-family: sans-serif;
 }
 
 #container {
-    margin-top: 100px;
+    margin-top: 60px;
     width: 80%;
     max-width: 400px;
     margin-inline: auto;
 }
 
+img {
+    width: 25%;
+}
+
 h1 {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 10px;
     opacity: 0.9;
 }
 
 p {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     opacity: 0.7;
 }
 
@@ -40,13 +46,14 @@ input, button {
 
 input {
     margin-bottom: 20px;
+    border: none;
 }
 
 button {
-    border: none;
-    background-color: blueviolet;
+    background-image: linear-gradient(2deg, rgb(69, 0, 0), rgba(255, 0, 0, 0.961));
     color: white;
     transition: filter .2s;
+    border: none;
 }
 
 button:hover {
@@ -54,13 +61,12 @@ button:hover {
     cursor: pointer;
 }
 
-#resposta {
+#analiseFinal {
     margin-top: 30px;
-
     transition: opacity 1s;
 }
 
-#resposta div {
+#analiseFinal div {
     font-size: 16px;
     font-weight: normal;
     opacity: 0.9;

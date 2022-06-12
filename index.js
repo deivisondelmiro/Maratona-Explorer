@@ -1,53 +1,49 @@
-const elementoResposta = document.querySelector("#resposta")
-const inputPergunta = document.querySelector("#inputPergunta")
-const buttonPerguntar = document.querySelector('#buttonPerguntar')
-const respostas = [
-    "Certeza!",
-    "Não tenho tanta certeza.",
-    "É decididamente assim.",
-    "Não conte com isso.",
-    "Sem dúvidas!",
-    "Pergunte novamente mais tarde.",
-    "Sim, definitivamente!",
-    "Minha resposta é não.",
-    "Você pode contar com isso.",
-    "Melhor não te dizer agora.",
-    "A meu ver, sim.",
-    "Minhas fontes dizem não.",
-    "Provavelmente.",
-    "Não é possível prever agora.",
-    "Perspectiva boa.",
-    "As perspectivas não são tão boas.",
-    "Sim.",
-    "Concentre-se e pergunte novamente.",
-    "Sinais apontam que sim.",
+const elementoAnalises = document.querySelector("#analiseFinal")
+const inputAnalise = document.querySelector("#inputAnalise")
+const buttonAnalisar = document.querySelector('#buttonAnalisar')
+const analises = [
+    "Bom!",
+    "Ruim!",
+    "Olha... nem te conto.",
+    "Olha... só qualidade aí hein!",
+    "Mais que recomendado",
+    "Pode ir assistir essa obra prima",
+    "Seus gostos são peculiares, bom gosto",
+    "Produção de sucesso",
+    "Recomendo, e com pipoca e refrigerante do lado",
+    "Ótimo! Mas tenha um lencinho do lado",
+    "Bom gosto",
+    "Melhor assistir outro",
+    "Recomendado por muitos",
 ]
 
-// clicar em fazer pergunta
-function fazerPergunta() {
+// Clicar em fazer análise
+function fazerAnalise() {
 
-    // aviso para digitar a pergunta, caso o input esteja vazio
-    if(inputPergunta.value == "") {
-        alert("Digite sua pergunta")
+    // Aviso para caso o úsuario não digite um filme ou série
+    if(inputAnalise.value == "") {
+        alert("Digite um filme ou série!")
         return
     }
 
-    buttonPerguntar.setAttribute("disabled", true)
+    // Desabilitar a opção de clique no button Analisar
+    buttonAnalisar.setAttribute("disabled", true)
 
-    const pergunta = "<div>" + inputPergunta.value + "</div>"
+    // Criação da div onde aparecerá a frase de análise
+    const producao = "<div>" + inputAnalise.value + "</div>"
 
-    // gerar número aleatório
-    const totalRespostas = respostas.length
-    const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
+    // Geração de número aleatório
+    const totalAnalises = analises.length
+    const numeroAleatorio = Math.floor(Math.random() * totalAnalises)
 
-    elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
+    elementoAnalises.innerHTML = producao + analises[numeroAleatorio]
 
-    // voltar as respostas
-    elementoResposta.style.opacity = 1;
+    // Voltar a possivéis analises
+    elementoAnalises.style.opacity = 1;
 
-    // sumir a resposta depois de 3 segundos
+    // Sumir a análise depois de 3 segundos
     setTimeout(function() {
-        elementoResposta.style.opacity = 0;
-        buttonPerguntar.removeAttribute("disabled")
+        elementoAnalises.style.opacity = 0;
+        buttonAnalisar.removeAttribute("disabled")
     }, 3000)
 }
