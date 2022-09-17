@@ -2,12 +2,12 @@
 
 > 🖥️ Desktop
 
-![preview](./assets/preview-desktop.png)
+![preview](./assets/github/preview-desktop.png)
 
 
 > 📱 Mobile
 
-![preview](./assets/preview-mobile.png)
+![preview](./assets/github/preview-mobile.png)
 
 ## 📖 Sobre o Projeto
 
