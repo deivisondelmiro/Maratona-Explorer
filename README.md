@@ -24,8 +24,7 @@ Para ver a página na web, clique [aqui](https://deivisondelmiro.github.io/marat
 
 ## 🖋️ Diferenças do original
 Diferentemente do original, que o usuário colocava uma dúvida, e o mesmo recebia a resposta de uma bola de cristal, o projeto com a modificação tem a intenção de mostrar as avaliações sinceras de uma IA sobre os filmes e séries que o usuário quer assistir.
-A base de código permaneceu a mesma, só com mais respostas no array das raspostas.
-...
+A base de código permaneceu a mesma, só com mais respostas no array que possui as frases prontas para ser mostrado na tela.
 
 ## 📞 Contato
 E-mail: deivisondelmirodasilva@gmail.com
